@@ -482,7 +482,7 @@
             margin: 0 12px;
         }
         
-        /* תיקון יישור טקסט - מעורב לשני הכיוונים */
+        /* תיקון יישור טקסט - בלי רווחים הזויים */
         .justified-text {
             text-align: justify;
             text-align-last: right;
@@ -490,19 +490,17 @@
             -webkit-hyphens: auto;
             -moz-hyphens: auto;
             word-spacing: normal;
-            text-justify: inter-word;
         }
         
-        /* תיקון ספציפי לנייד - יישור משני הצדדים */
+        /* תיקון ספציפי לנייד - יישור נורמלי */
         @media (max-width: 768px) {
             .justified-text {
                 text-align: justify;
-                text-align-last: justify;
+                text-align-last: right;
                 hyphens: auto;
                 -webkit-hyphens: auto;
                 -moz-hyphens: auto;
                 word-spacing: normal;
-                text-justify: inter-word;
                 direction: rtl;
             }
         
